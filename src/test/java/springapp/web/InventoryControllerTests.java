@@ -6,9 +6,15 @@ import springapp.service.SimpleProductManager;
 
 import java.util.Map;
 
+/** InventoryControllerTests
+ *
+ *@author Jeffrey Johnson
+ */
 public class InventoryControllerTests extends TestCase {
 
     public void testHandleRequestView() throws Exception {
+
+        // Get an empty InventoryController, a List container for <Product>
         InventoryController controller = new InventoryController();
         controller.setProductManager(new SimpleProductManager());
         ModelAndView modelAndView = controller.handleRequest(null, null);
