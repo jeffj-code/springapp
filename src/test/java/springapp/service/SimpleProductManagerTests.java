@@ -8,18 +8,14 @@ import java.util.List;
 
 public class SimpleProductManagerTests extends TestCase {
 
-    private SimpleProductManager productManager;
-    private List<Product> products;
-
     private static int PRODUCT_COUNT = 2;
-
     private static Double CHAIR_PRICE = new Double(20.50);
     private static String CHAIR_DESCRIPTION = "widget0";
-
     private static String TABLE_DESCRIPTION = "widget1";
     private static Double TABLE_PRICE = new Double(150.10);
-
     private static int POSITIVE_PRICE_INCREASE = 10;
+    private SimpleProductManager productManager;
+    private List<Product> products;
 
     protected void setUp() throws Exception {
         productManager = new SimpleProductManager();

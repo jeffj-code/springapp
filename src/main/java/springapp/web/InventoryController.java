@@ -10,7 +10,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,15 +22,16 @@ public class InventoryController implements Controller {
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String now = (new Date()).toString();
-        logger.info("Returning hello view with ".concat(now));
+        String now = (new java.util.Date()).toString();
+        logger.info("returning hello view with " + now);
 
         Map<String, Object> myModel = new HashMap<String, Object>();
         myModel.put("now", now);
-        myModel.put("products", productManager.getProducts());
+        myModel.put("products", this.productManager.getProducts());
 
-        return new ModelAndView("home", "model", myModel);
+        return new ModelAndView("hello", "model", myModel);
     }
+
 
     public void setProductManager(ProductManager productManager) {
         this.productManager = productManager;

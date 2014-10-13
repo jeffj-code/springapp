@@ -13,6 +13,11 @@ public class SimpleProductManager implements ProductManager {
         return products;
     }
 
+    //todo: implement setProducts()
+    public void setProducts(List<Product> products) {
+        this.products = products;
+    }
+
     //todo: implement increasePrice()
     public void increasePrice(int percentage) {
         if (products != null) {
@@ -22,11 +27,6 @@ public class SimpleProductManager implements ProductManager {
             }
         }
 
-    }
-
-    //todo: implement setProducts()
-    public void setProducts(List<Product> products) {
-        this.products = products;
     }
 
 }
