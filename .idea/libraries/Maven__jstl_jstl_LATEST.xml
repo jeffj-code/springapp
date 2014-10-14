@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: jstl:jstl:LATEST">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/jstl/jstl/LATEST/jstl-LATEST.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/jstl/jstl/LATEST/jstl-LATEST-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/jstl/jstl/LATEST/jstl-LATEST-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
